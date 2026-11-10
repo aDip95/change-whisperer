@@ -218,16 +218,17 @@ __marimo__/
 # IDE
 .idea/
 
-# File temporanei di debug/test
-debug_screenshot.png
+# Screenshot e immagini locali (possono contenere dati personali)
+*.png
 
-# Log locali del bot (storico su Raspberry)
-data/*.log
-data/*.log.*
-data/changes.jsonl*
+# Dati runtime del bot (log, storico cambiamenti, GIF): mai nel repo
+data/
 
 # Scrittura atomica di monitored_sites.json (resta solo se il bot muore a metà)
 *.tmp
 
 # Stato runtime del bot (siti monitorati, dati personali): mai nel repo
 monitored_sites.json
+
+# Impostazioni locali di Claude Code (percorsi e comandi della macchina)
+.claude/settings.local.json
